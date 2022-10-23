@@ -24,29 +24,9 @@ public class Task1 {
      * <p>
      * Input: nums = [3,3], target = 6
      * Output: [0,1]
-     * <p>
-     * Constraints:
-     * <p>
-     * 2 <= nums.length <= 104
-     * -109 <= nums[i] <= 109
-     * -109 <= target <= 109
-     * Only one valid answer exists.
-     * <p>
-     * Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?
      */
 
-    public static void main(String[] args) {
-        int[] array = {3, 4, 2, 7};
-        int[] array1 = {4, 4, 4, 1, 3, 2, 5};
-        int[] array2 = {2, 7, 11, 15};
-        int[] array3 = {3, 3};
-        searchStream(array, 6);
-        searchStream(array1, 6);
-        searchStream(array2, 9);
-        searchStream(array3, 6);
-    }
-
-    public static int[] searchStream(int[] nums, int target) {
+    public int[] searchStream(int[] nums, int target) {
         Map<Integer, List<Integer>> numbers = new HashMap<>();
 
         int i = 0;
